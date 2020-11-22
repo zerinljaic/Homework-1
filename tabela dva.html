@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    th {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>List of Movies</h1>
+  <!-- Data Form -->
+  <table border="1px" id="list-of-movies">
+    <tr>
+      <th data-prop="name">Name</th>
+      <th data-prop="description">Description</th>
+      <th data-prop="assessment">Assessment</th>
+      <th data-prop="duration">Duration</th>
+      <th>Actions</th>
+    </tr>
+
+  </table>
+
+  <!-- Form Input -->
+  <form id="form-input">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" id="name">
+    </p>
+    <p>
+      <label for="description">Description</label>
+      <input type="text" id="description">
+    </p>
+    <p>
+      <label for="assessment">Assessment</label>
+      <input type="text" id="assessment">
+    </p>
+    <p>
+      <label for="duration">Duration</label>
+      <select id="duration">
+        <option value="1h">1h</option>
+        <option value="1h 30min">1h 30min</option>
+        <option value="2h">2h</option>
+        <option value="2h 30min">2h 20min</option>
+      </select>
+    </p>
+    <p>
+      <button>Submit</button>
+    </p>
+  </form>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
